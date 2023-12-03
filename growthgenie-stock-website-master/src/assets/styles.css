@@ -1,0 +1,214 @@
+/* App.css */
+
+/* Basic styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+/* App.css */
+
+/* ...existing styles... */
+
+.header {
+  background-color: #0e2431; /* Dark gray color for header */
+  color: #fff; /* Text color for header */
+  padding: 20px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.footer {
+  background-color: #0e2431; /* Dark gray color for footer */
+  color: #fff; /* Text color for footer */
+  padding: 20px;
+  text-align: center;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+/* Other existing styles... */
+
+/* .footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+} */
+
+.sidebar-left {
+  flex: 0 0 250px;
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.sidebar-right {
+  flex: 0 0 250px;
+  background-color: #f0f0f0;
+  padding: 30px;
+  text-decoration: #0e2431;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .header-nav {
+    display: none; /* Hide the navigation in mobile view */
+  }
+
+  .sidebar-left,
+  .sidebar-right {
+    flex: 1;
+    width: 100%;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.input-field {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.submit-button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+.welcome-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set height to cover entire viewport */
+}
+
+.welcome-message p {
+  background-color: #e6e6e6;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.sidebar-left.collapsed .sidebar-menu {
+  display: none;
+}
+/* CSS */
+/* .footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+} */
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media {
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  color: white;
+  font-size: 1.5em;
+  margin: 0 5px;
+}
+
+.social-media a:hover {
+  color: #fc3a52; /* Change color on hover */
+}
+/* CSS */
+/* CSS */
+.investor-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px; /* Rounded table corners */
+  overflow: hidden; /* Ensure the overflow is hidden for rounded corners */
+}
+
+thead {
+  background-color: red !important; /* Red background for table header */
+  color: white; /* Text color for table header */
+}
+
+th,
+td {
+  padding: 8px 12px;
+  text-align: left;
+}
+
+/* Additional styling for odd and even rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Alternate row background color */
+}
+
+/* Responsive table */
+.table-responsive {
+  overflow-x: auto;
+  max-width: 100%;
+}
+.menu-item {
+  color: #0e2431;
+  background-color: #e8d5b7;
+}
+.menu-item:hover {
+  color: #fc3a52;
+  background-color: #f9b248;
+}

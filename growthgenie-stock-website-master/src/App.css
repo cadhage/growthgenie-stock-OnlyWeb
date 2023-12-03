@@ -1,0 +1,381 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.sidebar-menu li a {
+  display: block;
+  background-color: #0e2431;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-menu li a:hover {
+  background-color: #555;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Responsive styles */
+  .sidebar-left {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .sidebar-menu li {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  .sidebar-menu li:last-child {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* .sidebar-left, */
+  .sidebar-right {
+    display: none;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+}
+
+/* Other existing styles... */
+
+.header-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.header-menu li {
+  margin-right: 20px;
+}
+
+.header-menu li:last-child {
+  margin-right: 0;
+}
+
+.header-menu li a {
+  display: block;
+  background-color: #555;
+  color: #fff;
+  /* text-decoration: none; */
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.header-menu li a:hover {
+  background-color: #777;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Responsive styles */
+  .header {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    align-items: center;
+    background-color: #fc3a52;
+  }
+
+  .header-menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+/* App.css */
+
+/* ...existing styles... */
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  margin-left: 40px;
+  text-decoration: #ffc478;
+}
+
+.header-menu-left {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.header-menu-left li {
+  margin-right: 20px;
+}
+
+.header-menu-left li:last-child {
+  margin-right: 0;
+}
+
+.header-menu-left li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.header-menu-left li a:hover {
+  color: #fc3a52;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* .login-buttons {
+  margin-left: 20px;
+} */
+
+.admin-login,
+.customer-login {
+  background-color: #fc3a52;
+  text-decoration: solid;
+  color: #e8d5b7;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-login:hover,
+.customer-login:hover {
+  background-color: #f9b248;
+  color: #0e2431;
+  text-decoration: solid;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Responsive styles */
+  .header {
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .header-left,
+  .header-right {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .header-nav {
+    margin-left: 0;
+  }
+
+  .login-buttons {
+    margin-left: 0;
+  }
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 10px;
+}
+
+.sidebar-link {
+  display: block;
+  width: 100%;
+  background-color: #e8d5b7;
+  color: #0e2431; /* Changed text color */
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background-color: #f9b248; /* Slightly darker background color on hover */
+}
+
+.header-link {
+  color: #888; /* Dimmer text color for header links */
+  /* text-decoration: none; */
+  padding: 8px 12px;
+  margin-right: 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: 500; /* Slightly bolder font */
+}
+
+.header-link:hover {
+  background-color: #f9b248; /* Lighter background color on hover */
+  color: #0e2431; /* Darker text color on hover */
+  text-decoration: #fc3a52 solid;
+}
+.sidebar-wrapper {
+  position: relative;
+}
+
+.sidebar-left {
+  position: relative;
+  z-index: 0;
+}
+/* CSS for mobile-first design */
+/* CSS for mobile-first design */
+
+/* Styles for the main container */
+.main-container {
+  /* Add your main container styles here */
+  text-align: center; /* Center content horizontally */
+}
+
+/* Styles for toggle button */
+.toggle-btn {
+  display: none; /* Initially hide the toggle button */
+  /* Add your toggle button styles here */
+  width: 100%;
+  max-width: 100%; /* Ensure it takes full width */
+  padding: 10px; /* Adjust padding as needed */
+}
+
+/* Styles for mobile-only buttons */
+.mobile-buttons {
+  display: none; /* Initially hide the mobile-only buttons */
+  /* Add your mobile-only buttons styles here */
+}
+
+/* Media query for screens smaller than or equal to 768px (mobile screens) */
+@media screen and (max-width: 768px) {
+  /* Show the toggle button on mobile screens */
+  .toggle-btn {
+    display: block;
+  }
+
+  /* Show the mobile-only buttons when the toggle button is clicked */
+  .mobile-buttons {
+    display: block;
+  }
+}
+.table tbody tr td {
+  font-size: 12px; /* Adjust font size */
+}
+.table thead tr th {
+  font-size: 12px; /* Adjust font size */
+  background-color: #f0e5d8;
+}
+.table tbody tr {
+  padding: 2px; /* Adjust row spacing */
+  background-color: #f0e5d8;
+}
+.sidebar-button {
+  margin-top: 10px; /* Add some top margin to lower the button */
+  /* Other button styles */
+}
+/* Header.css */
+
+/* Style for the login and register buttons */
+.login-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Add some top margin for spacing */
+}
+
+.login,
+.register {
+  padding: 8px 16px;
+  margin: 0 10px; /* Add horizontal margin for spacing */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .login-buttons {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .login,
+  .register {
+    width: 100%; /* Set the width to take the entire screen */
+    margin: 10px 0; /* Add vertical margin for spacing */
+    padding: 8px 16px;
+    margin: 0 10px; /* Add horizontal margin for spacing */
+    align-items: flex-end;
+  }
+}
